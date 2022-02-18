@@ -53,12 +53,16 @@
     <UnityVersion>2020.3.4f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\1. Scripts\Mission1.cs" />
+    <Compile Include="Assets\1. Scripts\Mission\Mission1.cs" />
     <Compile Include="Assets\1. Scripts\Player\JoyStrick.cs" />
     <Compile Include="Assets\1. Scripts\Player\PlayerCtrl.cs" />
+    <Compile Include="Assets\1. Scripts\Mission\Mission4.cs" />
+    <Compile Include="Assets\1. Scripts\Mission\Mission5.cs" />
     <Compile Include="Assets\1. Scripts\Player\Settings.cs" />
+    <Compile Include="Assets\1. Scripts\Mission\Mission2.cs" />
     <Compile Include="Assets\1. Scripts\MainMenu.cs" />
-    <Compile Include="Assets\1. Scripts\Mission2.cs" />
+    <Compile Include="Assets\1. Scripts\Mission\Mission3.cs" />
+    <Compile Include="Assets\1. Scripts\Mission\Mission6.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

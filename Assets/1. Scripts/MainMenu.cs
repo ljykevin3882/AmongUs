@@ -22,7 +22,7 @@ Application.Quit();
         gameObject.SetActive(false);
         missionView.SetActive(true);
 
-        GameObject player=Instantiate(Resources.Load("Character"),new Vector3(0,-2,0),Quaternion.identity) as GameObject;
+        GameObject player=Instantiate(Resources.Load("Character"),new Vector3(0,-4,0),Quaternion.identity) as GameObject;
         player.GetComponent<PlayerCtrl>().mainView = gameObject;
         player.GetComponent<PlayerCtrl>().missionView = missionView;
     }

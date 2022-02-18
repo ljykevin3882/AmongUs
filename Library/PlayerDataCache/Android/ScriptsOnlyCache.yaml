@@ -3,7 +3,14 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - JoyStrick
     - MainMenu
+    - Mission1
+    - Mission2
+    - Mission3
+    - Mission4
+    - Mission5
+    - Mission6
     - PlayerCtrl
+    - Settings
     Unity.2D.Animation.Editor.dll:
     - UnityEditor.U2D.Animation.BoneGizmo
     Unity.2D.IK.Editor.dll:
@@ -38,7 +45,10 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.Text
   sceneClasses:
     Assets/0. Scenes/SampleScene.unity:
     - Class: 1
@@ -55,7 +65,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 50
       Script: {instanceID: 0}
+    - Class: 58
+      Script: {instanceID: 0}
     - Class: 61
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 68
       Script: {instanceID: 0}
@@ -70,26 +84,50 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1522}
+      Script: {instanceID: 1458}
     - Class: 114
-      Script: {instanceID: 2110}
+      Script: {instanceID: 1460}
     - Class: 114
-      Script: {instanceID: 2156}
+      Script: {instanceID: 1804}
     - Class: 114
-      Script: {instanceID: 2684}
+      Script: {instanceID: 2114}
     - Class: 114
-      Script: {instanceID: 2856}
+      Script: {instanceID: 2160}
     - Class: 114
-      Script: {instanceID: 3092}
+      Script: {instanceID: 2658}
     - Class: 114
-      Script: {instanceID: 3338}
+      Script: {instanceID: 2688}
     - Class: 114
-      Script: {instanceID: 3458}
+      Script: {instanceID: 2742}
     - Class: 114
-      Script: {instanceID: 4014}
+      Script: {instanceID: 2862}
     - Class: 114
-      Script: {instanceID: 4228}
+      Script: {instanceID: 3098}
+    - Class: 114
+      Script: {instanceID: 3270}
+    - Class: 114
+      Script: {instanceID: 3346}
+    - Class: 114
+      Script: {instanceID: 3466}
+    - Class: 114
+      Script: {instanceID: 3684}
+    - Class: 114
+      Script: {instanceID: 4024}
+    - Class: 114
+      Script: {instanceID: 4238}
+    - Class: 114
+      Script: {instanceID: 4844}
+    - Class: 114
+      Script: {instanceID: 5746}
+    - Class: 114
+      Script: {instanceID: 5760}
+    - Class: 114
+      Script: {instanceID: 18652}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -112,16 +150,22 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: 5ab533713adae59372fb3e10a585c186
-    assemblyName: Unity.Timeline.dll
-    namespaceName: UnityEngine.Timeline
-    className: AnimationPlayableAsset
-  - hash:
-      serializedVersion: 2
       Hash: a6e561615949734e9f12f9b61661f43e
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 699619b86d9359741a4f58540298c80b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
   - hash:
       serializedVersion: 2
       Hash: 77aaaaa51f7a8d8ff333a879741e47d2
@@ -184,6 +228,12 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
+      Hash: 8cf693f3f80ff5f106c1f9deeadb3937
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mission1
+  - hash:
+      serializedVersion: 2
       Hash: 300fd99066f8c288e85f5e81ce65fe34
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -196,7 +246,7 @@ ScriptsOnlyBuild:
     className: JoyStrick
   - hash:
       serializedVersion: 2
-      Hash: 836944e305fa530b4d8dcef7570c08d0
+      Hash: 1c6d871926299e0fc03de4440c486ba9
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerCtrl
@@ -212,12 +262,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_StyleSheet
-  - hash:
-      serializedVersion: 2
-      Hash: 699619b86d9359741a4f58540298c80b
-    assemblyName: UnityEngine.UI.dll
-    namespaceName: UnityEngine.UI
-    className: Text
   - hash:
       serializedVersion: 2
       Hash: f1d735cc1a21c3704ab52568f4fbfcf8
@@ -244,10 +288,22 @@ ScriptsOnlyBuild:
     className: IKManager2D
   - hash:
       serializedVersion: 2
+      Hash: a44bcec55c6b66e17726945a98f82cb1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mission4
+  - hash:
+      serializedVersion: 2
       Hash: a1aa98c78061c6f03a8c124cda576e67
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: 38acc9adb11d840bda5a902b1066a76c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mission5
   - hash:
       serializedVersion: 2
       Hash: cf9f5cf2c3145a37ac07f00e50e460f9
@@ -328,6 +384,12 @@ ScriptsOnlyBuild:
     className: TestResultRendererCallback
   - hash:
       serializedVersion: 2
+      Hash: 1919d3ad91ac10f02108f842f0958e89
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Settings
+  - hash:
+      serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -382,6 +444,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 7681b2e323d125d3ad9c94196cb289e4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mission2
+  - hash:
+      serializedVersion: 2
       Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -418,7 +486,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 06bcde29a225e5a66b9a590dba13a0d6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenu
@@ -556,12 +624,6 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Test
-  - hash:
-      serializedVersion: 2
       Hash: ef5c43f921427d03730f6ea4c848f07d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -634,6 +696,12 @@ ScriptsOnlyBuild:
     className: GridLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 4a720633065a04a534170739ed77f8fd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mission3
+  - hash:
+      serializedVersion: 2
       Hash: abf1930d8126d0b2e00e9449129a0190
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.EventSystems
@@ -644,7 +712,13 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
+  - hash:
+      serializedVersion: 2
+      Hash: 0d74857a0005a95e9d205c349d80f3a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mission6
   platform: 13
   scenePathNames:
   - Assets/0. Scenes/SampleScene.unity
-  playerPath: C:/Users/ljyke/Desktop/AmongBearUs.apk
+  playerPath: C:/Users/ljyke/Desktop/AmongUs.apk
