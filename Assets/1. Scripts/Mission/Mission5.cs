@@ -14,8 +14,11 @@ public class Mission5 : MonoBehaviour
     public Color blue, red;
     bool isDrag,isPlay;
     float rand;
+    MissionCtrl missionCtrl_script;
     void Start()
     {
+        missionCtrl_script = FindObjectOfType<MissionCtrl>();
+
         anim = GetComponentInChildren<Animator>();
         rect_handle = handle.GetComponent<RectTransform>();
 
@@ -90,5 +93,7 @@ public class Mission5 : MonoBehaviour
     public void MissionSuccess()
     {
         ClickCancel();
+        missionCtrl_script.MissionSuccess(GetComponent<CircleCollider2D>());
+
     }
 }

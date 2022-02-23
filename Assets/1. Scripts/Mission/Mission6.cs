@@ -16,10 +16,11 @@ public class Mission6 : MonoBehaviour
     Color leftC, rightC;
     public RectTransform[] rights;
     public LineRenderer[] lines;
-
+    MissionCtrl missionCtrl_script;
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
+        missionCtrl_script = FindObjectOfType<MissionCtrl>();
 
 
     }
@@ -28,7 +29,7 @@ public class Mission6 : MonoBehaviour
         //드래그
         if (isDrag)
         {
-            line.SetPosition(1, new Vector3(Input.mousePosition.x - clickpos.x, Input.mousePosition.y - clickpos.y, -10));
+            line.SetPosition(1, new Vector3((Input.mousePosition.x - clickpos.x)*1920f/Screen.width, (Input.mousePosition.y - clickpos.y) * 1080f / Screen.height, -10));
             //드래그 종료
             if (Input.GetMouseButtonUp(0))
             {
@@ -129,5 +130,7 @@ public class Mission6 : MonoBehaviour
     public void MissionSuccess()
     {
         ClickCancel();
+        missionCtrl_script.MissionSuccess(GetComponent<CircleCollider2D>());
+
     }
 }

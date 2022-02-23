@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - JoyStrick
+    - KillCtrl
     - MainMenu
     - Mission1
     - Mission2
@@ -9,6 +10,8 @@ ScriptsOnlyBuild:
     - Mission4
     - Mission5
     - Mission6
+    - MissionCtrl
+    - NPCCtrl
     - PlayerCtrl
     - Settings
     Unity.2D.Animation.Editor.dll:
@@ -48,6 +51,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
   sceneClasses:
     Assets/0. Scenes/SampleScene.unity:
@@ -88,6 +92,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1460}
     - Class: 114
+      Script: {instanceID: 1724}
+    - Class: 114
       Script: {instanceID: 1804}
     - Class: 114
       Script: {instanceID: 2114}
@@ -112,17 +118,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3684}
     - Class: 114
-      Script: {instanceID: 4024}
+      Script: {instanceID: 3792}
     - Class: 114
-      Script: {instanceID: 4238}
+      Script: {instanceID: 4026}
     - Class: 114
-      Script: {instanceID: 4844}
+      Script: {instanceID: 4164}
     - Class: 114
-      Script: {instanceID: 5746}
+      Script: {instanceID: 4242}
     - Class: 114
-      Script: {instanceID: 5760}
+      Script: {instanceID: 4406}
     - Class: 114
-      Script: {instanceID: 18652}
+      Script: {instanceID: 4850}
+    - Class: 114
+      Script: {instanceID: 5752}
+    - Class: 114
+      Script: {instanceID: 5766}
+    - Class: 114
+      Script: {instanceID: 20148}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -246,7 +258,7 @@ ScriptsOnlyBuild:
     className: JoyStrick
   - hash:
       serializedVersion: 2
-      Hash: 1c6d871926299e0fc03de4440c486ba9
+      Hash: 850c7828cb78733e44b302d1a965697c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerCtrl
@@ -462,6 +474,12 @@ ScriptsOnlyBuild:
     className: Outline
   - hash:
       serializedVersion: 2
+      Hash: a9b19882268c5cfeb9d3f362d0f9085a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: KillCtrl
+  - hash:
+      serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -486,7 +504,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 06bcde29a225e5a66b9a590dba13a0d6
+      Hash: 426a6c03f3792a4544d60defa8a090d0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MainMenu
@@ -528,6 +546,12 @@ ScriptsOnlyBuild:
     className: AudioPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: 0d74857a0005a95e9d205c349d80f3a9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Mission6
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
@@ -556,6 +580,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 96f84aed6267a42a8609cd9caded2ce7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MissionCtrl
   - hash:
       serializedVersion: 2
       Hash: 0edeba255bdbade25edc357f1412ba38
@@ -714,10 +744,10 @@ ScriptsOnlyBuild:
     className: FabrikSolver2D
   - hash:
       serializedVersion: 2
-      Hash: 0d74857a0005a95e9d205c349d80f3a9
+      Hash: 9d07c51d58478baeea29ce8d62bf0a30
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
-    className: Mission6
+    className: NPCCtrl
   platform: 13
   scenePathNames:
   - Assets/0. Scenes/SampleScene.unity

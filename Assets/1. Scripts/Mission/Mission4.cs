@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class Mission4 : MonoBehaviour
 {
+    MissionCtrl missionCtrl_script;
     public Transform numbers;
     Animator anim;
     PlayerCtrl playerCtrl_script;
@@ -13,6 +14,8 @@ public class Mission4 : MonoBehaviour
     int count;
     void Start()
     {
+        missionCtrl_script = FindObjectOfType<MissionCtrl>();
+
         anim = GetComponentInChildren<Animator>();
     }
     //미션 시작
@@ -68,5 +71,7 @@ public class Mission4 : MonoBehaviour
     public void MissionSuccess()
     {
         ClickCancel();
+        missionCtrl_script.MissionSuccess(GetComponent<CircleCollider2D>());
+
     }
 }

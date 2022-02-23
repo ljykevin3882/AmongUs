@@ -15,11 +15,14 @@ public class Mission2 : MonoBehaviour
     RectTransform rect_handle;
     bool isDrag,isPlay;
     Vector2 originPos;
+    MissionCtrl missionCtrl_script;
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
         rect_handle = handle.GetComponent<RectTransform>();
         originPos = rect_handle.anchoredPosition;
+        missionCtrl_script = FindObjectOfType<MissionCtrl>();
+
     }
     private void Update()
     {
@@ -127,5 +130,7 @@ public class Mission2 : MonoBehaviour
     public void MissionSuccess()
     {
         ClickCancel();
+        missionCtrl_script.MissionSuccess(GetComponent<CircleCollider2D>());
+
     }
 }

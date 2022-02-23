@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
-    public GameObject missionView;
+    public GameObject missionView, killView;
 
 //게임종료 버튼 누르면 호출
 public void ClickQuit(){
@@ -24,6 +24,19 @@ Application.Quit();
 
         GameObject player=Instantiate(Resources.Load("Character"),new Vector3(0,-4,0),Quaternion.identity) as GameObject;
         player.GetComponent<PlayerCtrl>().mainView = gameObject;
-        player.GetComponent<PlayerCtrl>().missionView = missionView;
+        player.GetComponent<PlayerCtrl>().playView = missionView;
+        player.GetComponent<PlayerCtrl>().isMission = true;
+        missionView.SendMessage("MissionReset");
+    }
+    public void ClickKill()
+    {
+        gameObject.SetActive(false);
+        killView.SetActive(true);
+
+        GameObject player = Instantiate(Resources.Load("Character"), new Vector3(0, -4, 0), Quaternion.identity) as GameObject;
+        player.GetComponent<PlayerCtrl>().mainView = gameObject;
+        player.GetComponent<PlayerCtrl>().playView = missionView;
+        player.GetComponent<PlayerCtrl>().isMission = false;
+        killView.SendMessage("KillReset");
     }
 }

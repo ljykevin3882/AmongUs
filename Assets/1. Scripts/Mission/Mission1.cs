@@ -10,9 +10,11 @@ public class Mission1 : MonoBehaviour
     public Image[] images;
     Animator anim;
     PlayerCtrl playerCtrl_script;
+    MissionCtrl missionCtrl_script;
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
+        missionCtrl_script = FindObjectOfType<MissionCtrl>();
     }
     //미션 시작
     public void MissionStart()
@@ -74,5 +76,6 @@ public class Mission1 : MonoBehaviour
     public void MissionSuccess()
     {
         ClickCancel();
+        missionCtrl_script.MissionSuccess(GetComponent<CircleCollider2D>());
     }
 }
